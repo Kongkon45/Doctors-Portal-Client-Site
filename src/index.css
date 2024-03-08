@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+/* Whatsapp.css */
+.whatsapp-container {
+    position: relative;
+  }
+  
+  .whatsapp-tooltip {
+    position: absolute;
+    bottom: 60px; /* Adjust this value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .whatsapp-container:hover .whatsapp-tooltip {
+    opacity: 1;
+  }
+  

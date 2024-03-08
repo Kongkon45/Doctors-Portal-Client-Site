@@ -51,7 +51,7 @@ const BookAppointment = ({date}) => {
     <section className='w-11/12 mx-auto py-10'>
         <h2 className='text-center text-2xl font-bold text-[#1DC9C3] mb-6'>Available Appointment on {date.toDateString()}</h2>
         <div className='grid lg:grid-cols-3 grid-cols-1 gap-10'>
-            {bookingData?.map((booking)=><BookingCart key={booking.id} booking={booking}/>)}
+            {bookingData?.map((booking)=><BookingCart key={booking.id} date={date} booking={booking}/>)}
         </div>
     </section>
   )
