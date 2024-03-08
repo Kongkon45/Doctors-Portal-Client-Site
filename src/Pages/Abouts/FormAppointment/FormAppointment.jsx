@@ -42,27 +42,27 @@ const FormAppointment = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
         <p className="text-center ">
           <small>{date.toDateString()}</small>
         </p>
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit(onSubmit)} className="w-96 mt-3">
           <input
-          className="border-2 p-2 rounded-md my-1"
+          className="border-2 p-2 rounded-md my-1 w-full"
             type="text"
             placeholder="First name"
             {...register("First name", { required: true, maxLength: 80 })}
           /> <br />
           <input
-          className="border-2 p-2 rounded-md my-1"
+          className="border-2 p-2 rounded-md my-1 w-full"
             type="text"
             placeholder="Last name"
             {...register("Last name", { required: true, maxLength: 100 })}
           /> <br />
           <input
-          className="border-2 p-2 rounded-md my-1"
+          className="border-2 p-2 rounded-md my-1 w-full"
             type="text"
             placeholder="Email"
             {...register("Email", { required: true, pattern: /^\S+@\S+$/i })}
           /> <br />
           <input
-          className="border-2 p-2 rounded-md my-1"
+          className="border-2 p-2 rounded-md my-1 w-full"
             type="tel"
             placeholder="Mobile number"
             {...register("Mobile number", {
@@ -72,7 +72,7 @@ const FormAppointment = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
             })}
           /> <br />
 
-          <input className="bg-orange-400 text-white py-1 px-4 rounded-lg ml-16" type="submit" />
+          <input className="bg-orange-400 text-white py-1 px-4 mt-3 rounded-lg ml-40 font-bold" type="submit" />
         </form>
       </Modal>
     </div>

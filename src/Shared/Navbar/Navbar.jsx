@@ -13,26 +13,26 @@ const Navbar = () => {
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1">
             <li className="mr-5">
-              <NavLink to="/" className="text-xl text-bold " style={{background : "none", color:"white", fontWeight: "bold"}}>Home</NavLink>
+              <NavLink to="/" className="text-[16px]" style={{background : "none", color:"white"}}>Home</NavLink>
             </li>
             <li className="mr-5">
-              <NavLink to="/about" className="text-xl text-bold" style={{background : "none", color:"white", fontWeight: "bold"}}>About</NavLink>
+              <NavLink to="/about" className="text-[16px]" style={{background : "none", color:"white"}}>About</NavLink>
             </li>
             <li className="mr-5">
-              <NavLink to="/dental_services" className="text-xl text-bold" style={{background : "none", color:"white", fontWeight: "bold"}}>Dental Services</NavLink>
+              <NavLink to="/dental_services" className="text-[16px]" style={{background : "none", color:"white"}}>Dental Services</NavLink>
             </li>
             <li className="mr-5">
-              <NavLink to="/review" className="text-white text-xl font-bold" style={{background : "none"}}>
+              <NavLink to="/review" className="text-white text-[16px]" style={{background : "none"}}>
                 Reviews
               </NavLink>
             </li>
             <li className="mr-5">
-              <NavLink to="/blog" className="text-white text-xl font-bold" style={{background : "none"}}>
+              <NavLink to="/blog" className="text-white text-[16px]" style={{background : "none"}}>
                 Blog
               </NavLink>
             </li>
             <li className="mr-10">
-              <NavLink to="/contact_us" className="text-white text-xl font-bold" style={{background : "none"}}>
+              <NavLink to="/contact_us" className="text-white text-[16px]" style={{background : "none"}}>
                 Contact Us
               </NavLink>
             </li>
