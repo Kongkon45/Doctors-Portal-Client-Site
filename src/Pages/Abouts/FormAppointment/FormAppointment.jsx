@@ -28,7 +28,8 @@ const FormAppointment = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
 
 
   const onSubmit = async (data) => {
-
+    data.services = appointmentOn;
+    data.date = date;
     try {
       const appointment={
         firstName: data.firstName,
@@ -37,7 +38,7 @@ const FormAppointment = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
         phoneNumber: data.phoneNumber
       }
       const apiUrl = 'http://localhost:5000/appointment';
-      // console.log(data)
+      console.log(data)
       const response = await axios.post(apiUrl, appointment);
       setFormData(response.data.data);
       alert("User Data post successfully")

@@ -6,6 +6,7 @@ import Dental_Services from "../Pages/Dental_Services/Dental_Services/Dental_Ser
 import Review from "../Pages/Reviews/Review/Review";
 import Blog from "../Pages/Blogs/Blog/Blog";
 import Contact_Us from "../Pages/Contacts/Contact_Us/Contact_Us";
+import Dashboard from "../Pages/Dashboard/Dashboard/Dashboard";
 
 export const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ export const router = createBrowserRouter([
       {
         path : "/dental_services",
         element : <Dental_Services/>
+      },
+      {
+        path : "/dashboard",
+        element : <Dashboard/>
       },
       {
         path : "/review",
