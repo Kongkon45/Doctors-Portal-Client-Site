@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="navbar container mx-auto">
         <div className="flex-1">
           <Link to="/" className="text-white text-xl ml-10 font-bold">
-            Logo
+            Doctor
           </Link>
         </div>
         <div className="flex-none">
@@ -17,6 +17,9 @@ const Navbar = () => {
             </li>
             <li className="mr-5">
               <NavLink to="/about" className="text-[16px]" style={{background : "none", color:"white"}}>About</NavLink>
+            </li>
+            <li className="mr-5">
+              <NavLink to="/dashboard" className="text-[16px]" style={{background : "none", color:"white"}}>Dashboard</NavLink>
             </li>
             <li className="mr-5">
               <NavLink to="/dental_services" className="text-[16px]" style={{background : "none", color:"white"}}>Dental Services</NavLink>
