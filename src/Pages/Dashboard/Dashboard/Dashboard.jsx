@@ -11,7 +11,7 @@ const Dashboard = () => {
     setSelectedDate(date);
   };
   return (
-    <div className="flex h-screen">
+    <div className="flex h-content">
       <div className="w-2/12 bg-gradient-to-t from-[#18D2B5] to-[#13D1D7] text-white flex justify-center pt-20">
         <Sidebar />
       </div>

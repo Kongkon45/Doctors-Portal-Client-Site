@@ -7,6 +7,7 @@ import Review from "../Pages/Reviews/Review/Review";
 import Blog from "../Pages/Blogs/Blog/Blog";
 import Contact_Us from "../Pages/Contacts/Contact_Us/Contact_Us";
 import Dashboard from "../Pages/Dashboard/Dashboard/Dashboard";
+import Appointment from "../Pages/Appointments/Appointment/Appointment";
 
 export const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ export const router = createBrowserRouter([
       {
         path : "/dashboard",
         element : <Dashboard/>
+      },
+      {
+        path : "/dashboard/appointment",
+        element : <Appointment/>
       },
       {
         path : "/review",
